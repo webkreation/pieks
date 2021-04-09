@@ -9,11 +9,7 @@ import theme from "../theme/theme";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <ColorModeProvider
-        options={{
-          useSystsemColorMode: true,
-        }}
-      >
+      <ColorModeProvider options={{}}>
         <CSSReset />
         <Layout>
           <Component {...pageProps} />
