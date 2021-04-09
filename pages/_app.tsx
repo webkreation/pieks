@@ -1,14 +1,25 @@
 import type { AppProps /*, AppContext */ } from "next/app";
-import "../styles/globals.css";
+import { ChakraProvider, ColorModeProvider, CSSReset } from "@chakra-ui/react";
+
 import "typeface-dosis";
 
 import Layout from "../components/Layout";
+import theme from "../theme/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ChakraProvider theme={theme}>
+      <ColorModeProvider
+        options={{
+          useSystsemColorMode: true,
+        }}
+      >
+        <CSSReset />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ColorModeProvider>
+    </ChakraProvider>
   );
 }
 
