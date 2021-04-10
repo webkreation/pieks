@@ -13,10 +13,21 @@ export default function Home() {
 
       <>
         <Logo />
-        <h1 className="text-6xl font-bold">Impf2!</h1>
-        <h2 className="text-4xl font-bold">Ein Impfstoff für Menschen ohne Impfstoff</h2>
+        <h1>Impf2 e.V.!</h1>
+        <h2>Spende einen Impfstoff für Menschen ohne Impfstoff!</h2>
+<div class="flex items-center">
+     <img src="https://philipp.meier.name/assets/impf2gib2.png" class="scale-50"/>
+</div>
 
-        <p className="mt-3 text-2xl">
+<form action="https://www.paypal.com/donate" method="post" target="_top" class="text-xl">
+<input type="hidden" name="hosted_button_id" value="F4ARYB6S9UTVC" />
+<div class="flex items-center">
+<input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"  class="align-bottom"/>&nbsp;über&nbsp;<img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-150px.png" border="0" alt="PayPal Logo" />
+</div>
+</form>
+
+
+        <p className="hero">
           Viele Menschen in Deutschland sehnen derzeit ihre Corona- Impfung herbei. Eine Impfung
           scheitert vielfach noch an der Verfügbarkeit eines Impfstoffs.
           <br />
