@@ -1,13 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 
-const breakpoints = createBreakpoints({
-  sm: "40em",
-  md: "52em",
-  lg: "64em",
-  xl: "80em",
-});
-
 const theme = extendTheme({
   initialColorMode: "light",
   useSystemColorMode: false,
@@ -22,7 +15,6 @@ const theme = extendTheme({
     heading: "Dosis",
     mono: "Menlo, monospace",
   },
-  breakpoints,
 });
 
 export default theme;

@@ -25,25 +25,21 @@ export default function Home() {
       </Head>
 
       <Container maxW={"3xl"}>
-        <Stack
-          as={Box}
-          textAlign={"center"}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}
-        >
+        <Stack as={Box} textAlign={"center"} spacing={{ base: 8, md: 14 }} py={{ base: 10 }}>
           <Logo />
           <Heading
+            as="h1"
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
             color={"yellow"}
           >
             Impf2! <br />
-            <Text as={"span"} color={"blue"}>
+            <Text as={"span"} color={"blue"} fontSize={{ base: "xl", sm: "2xl", md: "4xl" }}>
               Ein Impfstoff für Menschen ohne Impfstoff
             </Text>
           </Heading>
-          <Text color={"gray.500"} size={"lg"}>
+          <Text color={"gray.500"} fontSize={{ base: "md", sm: "md", md: "lg" }}>
             Viele Menschen in Deutschland sehnen derzeit ihre Corona- Impfung herbei. Eine Impfung
             scheitert vielfach noch an der Verfügbarkeit eines Impfstoffs.
             <br />
@@ -59,26 +55,19 @@ export default function Home() {
             Corona erst dann endgütig vorbei ist, wenn die ganze Welt geimpft ist: Letztlich auch
             für uns.
           </Text>
-          <Stack
-            direction={"column"}
-            spacing={3}
-            align={"center"}
-            alignSelf={"center"}
-            position={"relative"}
-          >
+          <Stack direction={"column"} align={"center"} alignSelf={"center"} position={"relative"}>
             <Button
-              colorScheme={"green"}
-              bg={"green.400"}
+              fontSize={"2xl"}
+              colorScheme={"yellow"}
+              bg={"yellow"}
               rounded={"full"}
-              px={6}
+              px={20}
+              py={5}
               _hover={{
-                bg: "green.500",
+                bg: "yellow",
               }}
             >
-              Get Started
-            </Button>
-            <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-              Learn more
+              Jetzt Spenden
             </Button>
             <Box>
               <Icon
@@ -91,13 +80,12 @@ export default function Home() {
               />
               <Text
                 fontSize={"lg"}
-                fontFamily={"Caveat"}
                 position={"absolute"}
-                right={"-125px"}
+                right={"-85px"}
                 top={"-15px"}
                 transform={"rotate(10deg)"}
               >
-                Starting at $15/mo
+                ab 2€
               </Text>
             </Box>
           </Stack>
